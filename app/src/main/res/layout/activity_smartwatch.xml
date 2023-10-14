@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".Smartwatch">
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/emergency_call"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="BtnSetEmergency_onClick"
+            android:scaleType="centerInside"
+            android:background="@color/teal_200"
+            android:src="@drawable/emergencycall" />
+
+        <ImageButton
+            android:id="@+id/bt_scan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="BtnSetScan_onClick"
+            android:scaleType="fitCenter"
+            android:background="@color/purple_200"
+            android:src="@drawable/scan" />
+
+    </LinearLayout>
+
+    <LinearLayout
+       android:layout_marginTop="400dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+    <ImageButton
+        android:id="@+id/report_generator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:onClick="BtnSetPDFGenerator_onClick"
+        android:scaleType="centerInside"
+        android:background="#0AB4DF"
+        android:src="@drawable/article" />
+
+        <ImageButton
+            android:id="@+id/nearbyhospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="BtnNearbyHospital_onClick"
+            android:scaleType="centerInside"
+            android:background="@color/red"
+            android:src="@drawable/hospital" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/bottom_navigation" />
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fyp</string>
+    <string name="delete">Delete Item</string>
+    <string name="title_activity_maps" translatable="false">MapsActivity</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyC6K51T1fkBSCth6oq5jxi7Q-jfOz-ldGw</string>
+
+</resources>
